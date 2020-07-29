@@ -1,0 +1,8 @@
+<div>
+    <img (click)="this.ImageClick()" [src]="imageUrl" alt=""  class="img" />
+</div>
+<div class="mess">
+    <a (click) = "this.TextClick()">{{imgMess}}</a>
+</div>
+<img [src] = "textMess" [hidden] = "forgot" class="img"/>
+<div class="mess">{{textMess2}}</div>
