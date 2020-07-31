@@ -4,12 +4,21 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { splashScreenModule } from "./splash-screen/splash-screen.component";
+import { HomeComponent } from './home/home.component';
+import { FirstHomeComponent } from './home/first-home/first-home.component';
+import { SecondHomeComponent } from './home/second-home/second-home.component';
+
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-  
+    HomeComponent,
+    FirstHomeComponent,
+    SecondHomeComponent,
+
+
   ],
   imports: [
     BrowserModule,

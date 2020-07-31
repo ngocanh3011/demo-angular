@@ -1,0 +1,103 @@
+.msg {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #FFF;
+  font-size: 16px;
+  background-image:url('src/assets/img/happy-birthday.jpg') ;
+}
+
+h1 {
+	font-family: 'Source Sans Pro', sans-serif;
+  font-weight: lighter;
+  color: #FFF;
+  margin-top: 40px;
+}
+h2 {
+
+  font-family: 'Source Sans Pro', sans-serif;
+	font-weight: lighter;
+  color: #FFF;
+}
+span{
+  background-color: #5da1ce;
+}
+
+#yes {
+	background: #C5062C;
+	border: 0;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 15px 25px;
+	position: absolute;
+	left: 500px;
+	top: 300px;
+	cursor: pointer;
+	-o-transition: .5s;
+	-ms-transition: .5s;
+	-moz-transition: .5s;
+	-webkit-transition: .5s;
+	transition: .5s;
+}
+
+#yes a {
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #fff;
+	display: inline-block;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 15px;
+}
+
+#yes:hover {
+	background: #111;
+}
+input[type=button] {
+	background: #C5062C;
+	color: #fff;
+	border: 0;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 15px 25px;
+	font-weight: 700;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+#myModal{
+  display: block;
+}
+
+#info {
+	background:#333;
+	opacity:0.8;
+  position: relative;
+  left: 40%;
+  width:400px;
+  top: 120px ;
+	color:#fff;
+	border-radius: 5px;
+  animation-name: example;
+  animation-duration: 2s;
+
+}
+
+@keyframes example {
+  0%   { left:40%; top:0px;}
+  100% { left:40%; top:120px;}
+}
+
+#info p {
+   padding:0 10px;
+}
+
+#info a{ color:#f2ea0a; }
+
+body {
+	background: #000;
+	margin: 50% 50%;
+}
+
+
