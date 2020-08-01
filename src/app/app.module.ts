@@ -4,14 +4,27 @@ import { BrowserTransferStateModule, TransferState } from '@angular/platform-bro
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { splashScreenModule } from "./splash-screen/splash-screen.component";
+import { HomeComponent } from './home/home.component';
+import { FirstHomeComponent } from './home/first-home/first-home.component';
+import { SecondHomeComponent } from './home/second-home/second-home.component';
+
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
+<<<<<<< HEAD
      
 
   
+=======
+    HomeComponent,
+    FirstHomeComponent,
+    SecondHomeComponent,
+
+
+>>>>>>> 9adacfc84a380f119cbacf2903b2e49a2125a332
   ],
   imports: [
     BrowserModule,
