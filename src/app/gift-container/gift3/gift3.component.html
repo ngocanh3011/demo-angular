@@ -1,5 +1,7 @@
-<div>
-    <img (click)="this.ImageClick()" [src]="imageUrl" alt=""  class="img-responsive" style="max-width: 250px ;" />
+<div class="container">
+    <div class="wrap">
+        <img [src]="imageUrl" (click)="this.ImageClick()" alt=""  class="img" />
+    </div>
 </div>
 <div class="mess">
     {{imgMess}}

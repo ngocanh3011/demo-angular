@@ -6,7 +6,16 @@ const routes: Routes = [
   {
     path: '',
     component: InfoContainerComponent
+    
+  },
+
+  {
+    path: 'gift-router',
+    component: GiftContainerComponent
   }
+
+   
+  
 ];
 
 @NgModule({
