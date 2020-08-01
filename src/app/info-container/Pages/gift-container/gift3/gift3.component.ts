@@ -9,14 +9,19 @@ import { Component, OnInit } from '@angular/core';
 export class Gift3Component implements OnInit {
   imageUrl = 'https://icons-for-free.com/iconfiles/png/512/christmas+gift+gift+box+present+icon-1320184382640199846.png';
   imgMess = '';
+  textMess = 'https://cdn4.iconfinder.com/data/icons/explosion/512/as_910-512.png';
+  txtLinkFB = '';
+  forgot = true;
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  ImageClick(){
-    this.imgMess = 'Không có quà rồi nè liu liu';
+  TextClick(){
+    this.forgot = this.forgot;
+    this.imgMess = 'Chúc mừng bạn đã nhận được 10 nghìn đồng!!!';
+    this.imageUrl = this.textMess;
+    this.txtLinkFB = 'Nhấp vào đây để gửi số tài khoản';
   }
-
 }
 
