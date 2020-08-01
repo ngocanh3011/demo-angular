@@ -6,7 +6,12 @@ const routes: Routes = [
   {
     path: '',
     component: InfoContainerComponent
+  },
+  {
+    path: 'first-route',
+    component: GiftContainerComponent
   }
+ 
 ];
 
 @NgModule({

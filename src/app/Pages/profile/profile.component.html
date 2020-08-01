@@ -1,0 +1,17 @@
+<h2 class="content-block">Profile</h2>
+
+<div class="content-block responsive-paddings cards">
+ 
+        <img src="https://js.devexpress.com/Demos/WidgetsGallery/JSDemos/{{employee.Picture}}"/>
+
+    <span>{{employee.Notes}}</span>
+</div>
+
+<div class="content-block responsive-paddings cards ">
+    <dx-form id="form"
+        [formData]="employee"
+        labelLocation="top"
+        [colCountByScreen]="colCountByScreen"
+    >
+    </dx-form>
+</div>

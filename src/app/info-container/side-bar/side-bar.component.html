@@ -1,16 +1,38 @@
-<div id="mySidenav" class="sidenav">
-  <a  class="closebtn" (click)="closeNav()">&times;</a>
-  <a >Info</a>
-  <a >Album</a>
-  <a >Loiwf chusc</a>
-</div>
-<div class="navbar navbar-dark bg-dark">
-  <div>
-  <span style="font-size:30px;cursor:pointer" (click)="openNav()">&#9776;</span>
-  <span>Dev App</span>
-</div>
-</div>
 
-<div id="main"> 
-  <p>aaaa</p>
+<div id="mySidenav" class="sidenav">
+  <div class="unOpenContainer" *ngIf="opened">
+    <fa-icon class="icon" (click)='openNav()' value='1' [icon]="faHome"></fa-icon>
+    <fa-icon class="icon" (click)='openNav()' [icon]="faGift"></fa-icon>
+    <fa-icon class="icon" (click)='openNav()' [icon]="faHeart"></fa-icon>
+
+  </div>
+  <div class="side-nav-container" *ngIf="!opened">
+    <div class="icon-container" (click)="onChange('home')">
+      <fa-icon class="icon" [icon]="faHome"></fa-icon>
+      <span>{{ info }}</span>
+    </div>
+    <div class="icon-container" (click)="onChange('gift')">
+      <fa-icon class="icon" [icon]="faGift"></fa-icon>
+      <span>{{ gift }}</span>
+    </div>
+    <div class="icon-container" (click)="onChange('heart')">
+      <fa-icon class="icon" [icon]="faHeart"></fa-icon>
+      <span>{{ heart }}</span>
+    </div>
+  </div>
+
+</div>
+<div class="fixed-top navbar navbar-container ">
+  <div>
+    <fa-icon (click)='openNav()' [icon]="faBars"></fa-icon>
+    <span>{{ title }}</span>
+  </div>
+  <div>
+    <img class='image' [src]="img">
+    <span>{{ email }}</span>
+  </div>
+</div>
+<div id="main" class="main">
+  <ng-content *ngIf='type == "home"' select="app-profile"></ng-content>
+  <ng-content *ngIf='type == "gift"' select="app-gift-container"></ng-content>
 </div>
