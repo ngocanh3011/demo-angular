@@ -11,12 +11,16 @@ import { SecondHomeComponent } from './home/second-home/second-home.component';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     FirstHomeComponent,
     SecondHomeComponent,
+ 
+
+
   ],
   imports: [
     BrowserModule,

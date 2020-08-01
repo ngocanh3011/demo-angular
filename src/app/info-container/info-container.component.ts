@@ -3,8 +3,12 @@ import { CommonModule } from '@angular/common';
 import { SideBarComponent } from "./side-bar/side-bar.component";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { DxFormModule } from 'devextreme-angular';
-import { ProfileModule } from './Pages/profile/profile.component';
-import { GiftContainerModule } from './Pages/gift-container/gift-container.component';
+import { ProfileModule } from '../info-container/Pages/profile/profile.component';
+import { GiftContainerModule } from '../info-container/Pages/gift-container/gift-container.component';
+import { MessComponent } from '../mess/mess.component';
+
+
+
 
 
 @Component({
@@ -20,6 +24,6 @@ export class InfoContainerComponent implements OnInit {
 @NgModule({
   imports: [CommonModule, DxFormModule, FontAwesomeModule, ProfileModule, GiftContainerModule],
   exports: [InfoContainerComponent],
-  declarations: [InfoContainerComponent, SideBarComponent]
+  declarations: [InfoContainerComponent, SideBarComponent, MessComponent]
 })
 export class InfoContainerModule { }

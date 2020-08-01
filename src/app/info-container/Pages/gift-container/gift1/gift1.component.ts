@@ -9,21 +9,19 @@ import { Component, OnInit } from '@angular/core';
 export class Gift1Component implements OnInit {
   imageUrl = 'https://icons-for-free.com/iconfiles/png/512/christmas+gift+gift+box+present+icon-1320184382640199846.png';
   imgMess = '';
-  textMess = 'https://neologic-repairs.000webhostapp.com/1.png';
-  textMess2 = '';
+  textMess = '../assets/img/gift-1.png';
   forgot = true;
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  ImageClick(){
-    this.imgMess = 'Hãy bấm vào đây!';
-  }
+
   
   TextClick(){
-    this.forgot = !this.forgot;
+    this.forgot = this.forgot;
     this.imgMess = 'Quà là tụi em nè hehe';
+    this.imageUrl = this.textMess;
     
   }
 
