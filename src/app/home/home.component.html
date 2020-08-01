@@ -1,0 +1,5 @@
+<div class="container-fulid" >
+  <app-first-home *ngIf="home==='firstHome'" (homePage)='getHomePage($event)'></app-first-home>
+  <app-second-home *ngIf="home!=='firstHome'"></app-second-home>
+</div>
+

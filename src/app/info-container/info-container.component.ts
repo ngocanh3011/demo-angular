@@ -1,8 +1,11 @@
 import { Component, OnInit, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NavbarComponent } from "./navbar/navbar.component";
 import { SideBarComponent } from "./side-bar/side-bar.component";
-import { $ } from 'protractor';
+import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
+import { CardModule } from "../Pages/card/card.component";
+import { DxFormModule } from 'devextreme-angular';
+import { ProfileModule } from '../Pages/profile/profile.component';
+import { GiftContainerModule } from '../gift-container/gift-container.component';
 
 
 @Component({
@@ -11,25 +14,13 @@ import { $ } from 'protractor';
   styleUrls: ['./info-container.component.css']
 })
 export class InfoContainerComponent implements OnInit {
-  open: boolean = true;
-  toggleSidebar() {
-    this.open = !this.open;
-  }
-
-  constructor() { }
-
+  
   ngOnInit(): void {
   }
-  openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-  }
-  
-
 }
 @NgModule({
-  imports: [CommonModule],
+  imports: [CommonModule, CardModule, DxFormModule, FontAwesomeModule, ProfileModule, GiftContainerModule],
   exports: [InfoContainerComponent],
-  declarations: [InfoContainerComponent, NavbarComponent, SideBarComponent]
+  declarations: [InfoContainerComponent, SideBarComponent]
 })
 export class InfoContainerModule { }
