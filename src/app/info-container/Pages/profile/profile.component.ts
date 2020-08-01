@@ -12,12 +12,13 @@ import { CardComponent } from './card/card.component';
 export class ProfileComponent implements OnInit {
   employee: any;
   colCountByScreen: object;
+  img ='../../../../assets/img/avatar.PNG';
 
   constructor() {
     this.employee = {
       ID: 'HandSomeBoy',
       Nickname: 'kiki',
-      Tên: 'Phương Phạm',
+      Name: 'Phương Phạm',
       relationship: 'Đã kết hôn',
       Prefix: 'Mr.',
       Position: 'Scum Master',

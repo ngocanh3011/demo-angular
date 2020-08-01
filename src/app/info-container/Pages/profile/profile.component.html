@@ -3,7 +3,7 @@
 <div class="content-block responsive-paddings cards">
     <div class="row">
         <div class="col-lg-4">
-            <img src="https://js.devexpress.com/Demos/WidgetsGallery/JSDemos/{{employee.Picture}}" />
+            <img [src]="img" />
         </div>
         <div class="col-lg-8">
             <span>{{employee.Notes}}</span>
@@ -14,9 +14,12 @@
 
 
 <div class="content-block responsive-paddings cards ">
-    <dx-form id="form" [formData]="employee" labelLocation="top" [colCountByScreen]="colCountByScreen">
+    <dx-form id="form" 
+    [formData]="employee" labelLocation="top" [colCountByScreen]="colCountByScreen">
     </dx-form>
 </div>
 
-<app-card></app-card>
+
+  <app-card></app-card>
+
 
