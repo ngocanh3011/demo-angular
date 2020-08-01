@@ -1,6 +1,7 @@
 import { Component, OnInit, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DxFormModule } from 'devextreme-angular';
+import { CardComponent } from './card/card.component';
 
 
 @Component({
@@ -11,12 +12,13 @@ import { DxFormModule } from 'devextreme-angular';
 export class ProfileComponent implements OnInit {
   employee: any;
   colCountByScreen: object;
+  img ='../../../../assets/img/avatar.PNG';
 
   constructor() {
     this.employee = {
       ID: 'HandSomeBoy',
       Nickname: 'kiki',
-      Tên: 'Phương Phạm',
+      Name: 'Phương Phạm',
       relationship: 'Đã kết hôn',
       Prefix: 'Mr.',
       Position: 'Scum Master',
@@ -41,6 +43,6 @@ export class ProfileComponent implements OnInit {
 @NgModule({
   imports: [CommonModule, DxFormModule],
   exports: [ProfileComponent],
-  declarations: [ProfileComponent]
+  declarations: [ProfileComponent, CardComponent]
 })
 export class ProfileModule { }

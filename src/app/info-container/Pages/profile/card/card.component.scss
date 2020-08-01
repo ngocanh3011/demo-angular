@@ -1,0 +1,19 @@
+div.img {
+  margin: 20px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 200px;
+  height: 350px;
+  overflow: hidden;
+} 
+div.img:hover {
+  border: 1px solid #777;
+}
+div.img img {
+  width: 200px;
+  height: 250px;
+}
+div.desc {
+  padding: 10px;
+  text-align: center;
+}

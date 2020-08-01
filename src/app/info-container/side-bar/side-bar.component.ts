@@ -13,8 +13,8 @@ export class SideBarComponent implements OnInit {
   faHeart = faHeart;
   faGift = faGift;
   title = 'Suprise!!!';
-  img = '../../../assets/img/nullAva.png';
-  email = 'quynhnganav@gmail.com';
+  img = '../../../assets/img/logo.png';
+  email = 'phuong.phamquang@axonactive.com';
   info = 'thông tin cá nhân';
   gift = 'quà tặng';
   heart = 'lời nhắn gửi';
