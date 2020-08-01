@@ -1,6 +1,7 @@
 import { Component, OnInit, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DxFormModule } from 'devextreme-angular';
+import { CardComponent } from './card/card.component';
 
 
 @Component({
@@ -41,6 +42,6 @@ export class ProfileComponent implements OnInit {
 @NgModule({
   imports: [CommonModule, DxFormModule],
   exports: [ProfileComponent],
-  declarations: [ProfileComponent]
+  declarations: [ProfileComponent, CardComponent]
 })
 export class ProfileModule { }

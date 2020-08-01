@@ -1,0 +1,22 @@
+<h2 class="content-block profile">Tụi em stalk anh được nhiêu đây nè :></h2>
+
+<div class="content-block responsive-paddings cards">
+    <div class="row">
+        <div class="col-lg-4">
+            <img src="https://js.devexpress.com/Demos/WidgetsGallery/JSDemos/{{employee.Picture}}" />
+        </div>
+        <div class="col-lg-8">
+            <span>{{employee.Notes}}</span>
+          
+        </div>
+    </div>
+</div>
+
+
+<div class="content-block responsive-paddings cards ">
+    <dx-form id="form" [formData]="employee" labelLocation="top" [colCountByScreen]="colCountByScreen">
+    </dx-form>
+</div>
+
+<app-card></app-card>
+

@@ -1,0 +1,75 @@
+
+// .form-avatar {
+//     float: left;
+//     height: 120px;
+//     width: 120px;
+//     margin-right: 20px;
+//     border: 1px solid rgba(0, 0, 0, 0.1);
+//     background-size: contain;
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-color: #fff;
+//    
+
+
+img {
+  width: 100%;
+}
+.cards {
+  border: 1px solid #999999;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  box-shadow: 0 0px 20px -6px rgba(8, 31, 71, 0.15);
+}
+.profile {
+  font-family: Muli;
+  font-size: 40px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #081f47;
+}
+.row {
+  display: flex;
+  align-items: center;
+  .col-lg-8 {
+    >span {
+      font-size: 40px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: right;
+      color: #ddae53
+
+      ;
+      &:before {
+        position: relative;
+        content: '"';
+        left: 0;
+      }
+  
+      &:after {
+        content: '"';
+        position: relative;
+        right: 0; 
+        }
+        &:after, &:before {
+          position: relative;
+          color: black;
+          top: 7;
+          font-size: 70px;
+          line-height: 40px;
+
+        
+    }
+     }
+  }
+}
+.container {
+  overflow-x: hidden;
+}
