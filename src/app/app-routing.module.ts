@@ -9,6 +9,7 @@ const routes: Routes = [
     path: '',
 <<<<<<< HEAD
     component: InfoContainerComponent
+<<<<<<< HEAD
   },
   {
     path: 'first-route',
@@ -18,6 +19,18 @@ const routes: Routes = [
 >>>>>>> 9adacfc84a380f119cbacf2903b2e49a2125a332
   }
  
+=======
+    
+  },
+
+  {
+    path: 'gift-router',
+    component: GiftContainerComponent
+  }
+
+   
+  
+>>>>>>> c3c361c062c07fd4cdcd564aedc06fcc01b8c5a1
 ];
 
 @NgModule({

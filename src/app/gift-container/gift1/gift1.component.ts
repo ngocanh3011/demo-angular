@@ -18,7 +18,7 @@ export class Gift1Component implements OnInit {
   }
 
   ImageClick(){
-    this.imgMess = 'Bấm vào đây!';
+    this.imgMess = 'Hãy bấm vào đây!';
   }
   
   TextClick(){
