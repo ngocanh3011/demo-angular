@@ -6,6 +6,10 @@ import { CardModule } from "../Pages/card/card.component";
 import { DxFormModule } from 'devextreme-angular';
 import { ProfileModule } from '../Pages/profile/profile.component';
 import { GiftContainerModule } from '../gift-container/gift-container.component';
+import { MessComponent } from '../mess/mess.component';
+
+
+
 
 
 @Component({
@@ -21,6 +25,6 @@ export class InfoContainerComponent implements OnInit {
 @NgModule({
   imports: [CommonModule, CardModule, DxFormModule, FontAwesomeModule, ProfileModule, GiftContainerModule],
   exports: [InfoContainerComponent],
-  declarations: [InfoContainerComponent, SideBarComponent]
+  declarations: [InfoContainerComponent, SideBarComponent, MessComponent]
 })
 export class InfoContainerModule { }

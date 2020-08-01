@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-second-home',
@@ -10,7 +11,7 @@ export class SecondHomeComponent implements OnInit {
   kt: boolean=true;
 
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -27,6 +28,10 @@ export class SecondHomeComponent implements OnInit {
 
   onYes(){
     this.kt=!this.kt;
+  }
+  goInfo() {
+    this.router.navigateByUrl('/gift');
+    console.log('aaa')
   }
 
 

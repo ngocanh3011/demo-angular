@@ -6,27 +6,28 @@
 	font-family: 'Source Sans Pro', sans-serif;
 	color: #FFF;
   font-size: 16px;
-  background-image:url('../../../assets/img//happy-birthday.jpg') ;
+  background-image:url('../../../assets/img/HappyBDay.jpeg') ;
+  background-size: 120% 105%	;
 }
 
 h1 {
 	font-family: 'Source Sans Pro', sans-serif;
   font-weight: lighter;
-  color: #FFF;
+  color: #4477a2;
   margin-top: 40px;
 }
 h2 {
 
   font-family: 'Source Sans Pro', sans-serif;
 	font-weight: lighter;
-  color: #FFF;
+  color: #4477a2;
 }
-span{
-  background-color: #5da1ce;
-}
+/* span{
+  background-color: #88c4ec;
+} */
 
 #yes {
-	background: #C5062C;
+	background: #639ac9;
 	border: 0;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
@@ -55,7 +56,7 @@ span{
 	background: #111;
 }
 input[type=button] {
-	background: #C5062C;
+	background: #639ac9;
 	color: #fff;
 	border: 0;
 	-moz-border-radius: 5px;

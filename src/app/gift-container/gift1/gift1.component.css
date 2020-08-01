@@ -2,29 +2,22 @@
     text-align: center;
     font-size: 30px;
     color: peru;
-
 }
-.img, .img-han{
+.img{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-  }
-.img-han{
-    border-radius: 20%;
-}
-    
-.container {
-    position: relative;
-  }
-  
-.img {
     opacity: 1;
     display: block;
     transition: .5s ease;
     backface-visibility: hidden;
   }
-  
+
+.container {
+    position: relative;
+  }
+   
 .middle {
     transition: .5s ease;
     opacity: 0;

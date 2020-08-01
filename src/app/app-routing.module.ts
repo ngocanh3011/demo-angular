@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {HomeComponent} from './home/home.component'
+import {HomeComponent} from './home/home.component';
 import { GiftContainerComponent } from "../app/gift-container/gift-container.component";
 import { InfoContainerComponent } from "./info-container";
 import { from } from 'rxjs';
@@ -11,7 +11,17 @@ const routes: Routes = [
 
     component: HomeComponent
 
-  }
+  },
+  {
+    path: 'gift',
+
+
+    component: InfoContainerComponent
+
+  },
+  
+
+
 ]
 
 @NgModule({

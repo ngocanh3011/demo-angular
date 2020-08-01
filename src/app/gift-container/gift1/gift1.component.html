@@ -1,10 +1,6 @@
 <div class="container">
     <div class="wrap">
-        <img [src]="imageUrl" (click)="this.ImageClick()" alt=""  class="img" />
+        <img [src]="imageUrl" (click)="this.TextClick()" alt=""  class="img" />
     </div>
 </div>
-<div class="alert alert-warning mess">
-    <a (click) = "this.TextClick()">{{imgMess}}</a>
-</div>
-<img [src] = "textMess" [hidden] = "forgot" class="img-han"/>
-<div class="mess">{{textMess2}}</div>
+<div class="mess">{{imgMess}}</div>

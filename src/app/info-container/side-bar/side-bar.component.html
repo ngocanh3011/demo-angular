@@ -15,7 +15,7 @@
       <fa-icon class="icon" [icon]="faGift"></fa-icon>
       <span>{{ gift }}</span>
     </div>
-    <div class="icon-container" (click)="onChange('heart')">
+    <div class="icon-container" (click)="onChange('mess')">
       <fa-icon class="icon" [icon]="faHeart"></fa-icon>
       <span>{{ heart }}</span>
     </div>
@@ -35,4 +35,5 @@
 <div id="main" class="main">
   <ng-content *ngIf='type == "home"' select="app-profile"></ng-content>
   <ng-content *ngIf='type == "gift"' select="app-gift-container"></ng-content>
+  <ng-content *ngIf='type == "mess"' select="app-mess"></ng-content>
 </div>
