@@ -7,30 +7,13 @@ import { from } from 'rxjs';
 const routes: Routes = [
   {
     path: '',
-<<<<<<< HEAD
-    component: InfoContainerComponent
-<<<<<<< HEAD
+    component: HomeComponent
   },
   {
-    path: 'first-route',
-    component: GiftContainerComponent
-=======
-    component: HomeComponent
->>>>>>> 9adacfc84a380f119cbacf2903b2e49a2125a332
+    path: 'gift',
+    component: InfoContainerComponent
   }
  
-=======
-    
-  },
-
-  {
-    path: 'gift-router',
-    component: GiftContainerComponent
-  }
-
-   
-  
->>>>>>> c3c361c062c07fd4cdcd564aedc06fcc01b8c5a1
 ];
 
 @NgModule({
