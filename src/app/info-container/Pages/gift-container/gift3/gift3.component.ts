@@ -19,9 +19,9 @@ export class Gift3Component implements OnInit {
 
   TextClick(){
     this.forgot = this.forgot;
-    this.imgMess = 'Chúc mừng bạn đã nhận được 10 nghìn đồng!!!';
+    this.imgMess = 'Bùm. Không có quà rồi nè. Leuleu!!!';
     this.imageUrl = this.textMess;
-    this.txtLinkFB = 'Nhấp vào đây để gửi số tài khoản';
+  
   }
 }
 
